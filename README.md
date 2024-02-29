@@ -3,6 +3,12 @@
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
+![Screenshot 2024-02-11 174708](https://github.com/christoph3r3w/connect-your-tribe-squad-page/assets/144007933/20faebce-3390-47f3-89e5-0f84ddb7f105)
+
+
+![Screenshot 2024-03-01 001326](https://github.com/christoph3r3w/connect-your-tribe-squad-page/assets/144007933/904f33ba-c52c-4cea-93b9-513ad4b9c6cb)
+
+
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
