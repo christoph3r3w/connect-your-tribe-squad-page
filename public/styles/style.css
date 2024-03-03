@@ -186,6 +186,7 @@ body {
   height: 100dvh;
   scrollbar-gutter: stable both-edges;
   background-color: var(--base-w);
+  overflow: hidden;
   backdrop-filter: blur(100px) brightness(1) opacity(4);
   transition: 1s;
   /* container-type: inline-size; */
@@ -217,7 +218,7 @@ body {
   
   position: absolute;
   inset: 15cqi 30cqi;
-  inset: 6cqi;
+  /* inset: 6cqi; */
   
   background-image: url(/images/uGRFZEs.jpeg);
   background-position: center;
@@ -352,11 +353,11 @@ body .screen:has(:hover,:focus,:active) {
 
 .window_card{
   position: absolute;
-  /* top: calc(var(--y, 0) * .98px);
-  left: calc(var(--x, 0) * 1px); */
+  top: calc(var(--y, 0) * .98px);
+  left: calc(var(--x, 0) * 1px);
   width: 50cqi;
-  top: 3rem;
-  right: 3rem;
+  /* top: 3rem;
+  right: 3rem; */
   
   
   background-color: aliceblue;
@@ -549,6 +550,8 @@ body .screen:has(:hover,:focus,:active) {
   /* inset: 10cqi; */
   top: 10cqi ;
   left: 37cqi;
+  /* top: calc(var(--y, 0) * .98px);
+  left: calc(var(--x, 0) * 1px);   */
   width: 52cqi;
   height: auto;
   aspect-ratio: 16/9;
@@ -880,17 +883,32 @@ body .screen:has(:hover,:focus,:active) {
 /*** squad window */
 #squad{
 
+
 	.window_content{
 		padding: 0;
 		margin: 0;
 		grid-area: c;
-		width: 100cqi;
-		overflow: hidden;
+		width: 100%;
+		overflow-y: scroll;
 		height: 70cqh;
-
-		display: grid;
- grid-template-columns: repeat(auto,minmax(0px,min-content));
+    color: var(--base-Text-b);
+		/* display: grid;
+  grid-template-columns: repeat(auto,minmax(0px,min-content)); */
 	  }
+
+  .window_content ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+
+    }
+
+  .window_content li{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    outline: solid;
+  }
 
  
 }

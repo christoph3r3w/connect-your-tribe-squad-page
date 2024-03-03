@@ -6,8 +6,8 @@ import fetchJson from './helpers/fetch-json.js'
 
 // Stel het basis endpoint in
 const apiUrl = 'https://fdnd.directus.app/items'
-const {data} = await fetchJson('https://fdnd.directus.app/items/person/40')
-console.log(data.nickname)
+const data = await fetchJson('https://fdnd.directus.app/items/person/40')
+console.log(data.id +" "+ data.data.name)
 
 // Haal alle squads uit de WHOIS API op
 const squadData = await fetchJson(apiUrl + '/squad')
@@ -32,7 +32,7 @@ app.get('/', function (request, response) {
     // Je zou dat hier kunnen filteren, sorteren, of zelfs aanpassen, voordat je het doorgeeft aan de view
 
     // Render index.ejs uit de views map en geef de opgehaalde data mee als variabele, genaamd persons
-    response.render('index', {persons: apiData.data, squads: squadData.data})
+    response.render('index', {persons: apiData.data, squads: squadData.data, data: data.data})
     // response.render('index', data)
 
   })
