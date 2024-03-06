@@ -8,19 +8,13 @@ We worked in the following repository
 
 ![Screenshot 2024-03-01 001326](https://github.com/christoph3r3w/connect-your-tribe-squad-page/assets/144007933/904f33ba-c52c-4cea-93b9-513ad4b9c6cb)
 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
 
 ## Beschrijving
 
-A Squad-page for our class using node.js, express and ejs 
+A Squad-page for our class using node.js, express and ejs.
+
+De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 ## Installatie
 * NPM
